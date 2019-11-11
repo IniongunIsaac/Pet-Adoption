@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8723799CD900EE7A1E /* AppDelegate.swift */; };
+		14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8923799CD900EE7A1E /* SceneDelegate.swift */; };
+		14805E8C23799CD900EE7A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8B23799CD900EE7A1E /* ViewController.swift */; };
+		14805E8F23799CD900EE7A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14805E8D23799CD900EE7A1E /* Main.storyboard */; };
+		14805E9123799CDB00EE7A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14805E9023799CDB00EE7A1E /* Assets.xcassets */; };
+		14805E9423799CDB00EE7A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14805E9223799CDB00EE7A1E /* LaunchScreen.storyboard */; };
+		14805E9F23799CDB00EE7A1E /* Pet_AdoptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E9E23799CDB00EE7A1E /* Pet_AdoptionTests.swift */; };
+		14805EAA23799CDB00EE7A1E /* Pet_AdoptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805EA923799CDB00EE7A1E /* Pet_AdoptionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14805E9B23799CDB00EE7A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14805E7C23799CD900EE7A1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14805E8323799CD900EE7A1E;
+			remoteInfo = "Pet Adoption";
+		};
+		14805EA623799CDB00EE7A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14805E7C23799CD900EE7A1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14805E8323799CD900EE7A1E;
+			remoteInfo = "Pet Adoption";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14805E8423799CD900EE7A1E /* Pet Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14805E8723799CD900EE7A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14805E8923799CD900EE7A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		14805E8B23799CD900EE7A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14805E8E23799CD900EE7A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14805E9023799CDB00EE7A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14805E9323799CDB00EE7A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14805E9523799CDB00EE7A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14805E9A23799CDB00EE7A1E /* Pet AdoptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet AdoptionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14805E9E23799CDB00EE7A1E /* Pet_AdoptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_AdoptionTests.swift; sourceTree = "<group>"; };
+		14805EA023799CDB00EE7A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14805EA523799CDB00EE7A1E /* Pet AdoptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet AdoptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14805EA923799CDB00EE7A1E /* Pet_AdoptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_AdoptionUITests.swift; sourceTree = "<group>"; };
+		14805EAB23799CDB00EE7A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14805E8123799CD900EE7A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805E9723799CDB00EE7A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805EA223799CDB00EE7A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14805E7B23799CD900EE7A1E = {
+			isa = PBXGroup;
+			children = (
+				14805E8623799CD900EE7A1E /* Pet Adoption */,
+				14805E9D23799CDB00EE7A1E /* Pet AdoptionTests */,
+				14805EA823799CDB00EE7A1E /* Pet AdoptionUITests */,
+				14805E8523799CD900EE7A1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14805E8523799CD900EE7A1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14805E8423799CD900EE7A1E /* Pet Adoption.app */,
+				14805E9A23799CDB00EE7A1E /* Pet AdoptionTests.xctest */,
+				14805EA523799CDB00EE7A1E /* Pet AdoptionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14805E8623799CD900EE7A1E /* Pet Adoption */ = {
+			isa = PBXGroup;
+			children = (
+				14805E8723799CD900EE7A1E /* AppDelegate.swift */,
+				14805E8923799CD900EE7A1E /* SceneDelegate.swift */,
+				14805E8B23799CD900EE7A1E /* ViewController.swift */,
+				14805E8D23799CD900EE7A1E /* Main.storyboard */,
+				14805E9023799CDB00EE7A1E /* Assets.xcassets */,
+				14805E9223799CDB00EE7A1E /* LaunchScreen.storyboard */,
+				14805E9523799CDB00EE7A1E /* Info.plist */,
+			);
+			path = "Pet Adoption";
+			sourceTree = "<group>";
+		};
+		14805E9D23799CDB00EE7A1E /* Pet AdoptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				14805E9E23799CDB00EE7A1E /* Pet_AdoptionTests.swift */,
+				14805EA023799CDB00EE7A1E /* Info.plist */,
+			);
+			path = "Pet AdoptionTests";
+			sourceTree = "<group>";
+		};
+		14805EA823799CDB00EE7A1E /* Pet AdoptionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14805EA923799CDB00EE7A1E /* Pet_AdoptionUITests.swift */,
+				14805EAB23799CDB00EE7A1E /* Info.plist */,
+			);
+			path = "Pet AdoptionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14805E8323799CD900EE7A1E /* Pet Adoption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14805EAE23799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet Adoption" */;
+			buildPhases = (
+				14805E8023799CD900EE7A1E /* Sources */,
+				14805E8123799CD900EE7A1E /* Frameworks */,
+				14805E8223799CD900EE7A1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pet Adoption";
+			productName = "Pet Adoption";
+			productReference = 14805E8423799CD900EE7A1E /* Pet Adoption.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14805E9923799CDB00EE7A1E /* Pet AdoptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14805EB123799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet AdoptionTests" */;
+			buildPhases = (
+				14805E9623799CDB00EE7A1E /* Sources */,
+				14805E9723799CDB00EE7A1E /* Frameworks */,
+				14805E9823799CDB00EE7A1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14805E9C23799CDB00EE7A1E /* PBXTargetDependency */,
+			);
+			name = "Pet AdoptionTests";
+			productName = "Pet AdoptionTests";
+			productReference = 14805E9A23799CDB00EE7A1E /* Pet AdoptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14805EA423799CDB00EE7A1E /* Pet AdoptionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14805EB423799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet AdoptionUITests" */;
+			buildPhases = (
+				14805EA123799CDB00EE7A1E /* Sources */,
+				14805EA223799CDB00EE7A1E /* Frameworks */,
+				14805EA323799CDB00EE7A1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14805EA723799CDB00EE7A1E /* PBXTargetDependency */,
+			);
+			name = "Pet AdoptionUITests";
+			productName = "Pet AdoptionUITests";
+			productReference = 14805EA523799CDB00EE7A1E /* Pet AdoptionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14805E7C23799CD900EE7A1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = InGroups;
+				TargetAttributes = {
+					14805E8323799CD900EE7A1E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					14805E9923799CDB00EE7A1E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 14805E8323799CD900EE7A1E;
+					};
+					14805EA423799CDB00EE7A1E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 14805E8323799CD900EE7A1E;
+					};
+				};
+			};
+			buildConfigurationList = 14805E7F23799CD900EE7A1E /* Build configuration list for PBXProject "Pet Adoption" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14805E7B23799CD900EE7A1E;
+			productRefGroup = 14805E8523799CD900EE7A1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14805E8323799CD900EE7A1E /* Pet Adoption */,
+				14805E9923799CDB00EE7A1E /* Pet AdoptionTests */,
+				14805EA423799CDB00EE7A1E /* Pet AdoptionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14805E8223799CD900EE7A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14805E9423799CDB00EE7A1E /* LaunchScreen.storyboard in Resources */,
+				14805E9123799CDB00EE7A1E /* Assets.xcassets in Resources */,
+				14805E8F23799CD900EE7A1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805E9823799CDB00EE7A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805EA323799CDB00EE7A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14805E8023799CD900EE7A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14805E8C23799CD900EE7A1E /* ViewController.swift in Sources */,
+				14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */,
+				14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805E9623799CDB00EE7A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14805E9F23799CDB00EE7A1E /* Pet_AdoptionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14805EA123799CDB00EE7A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14805EAA23799CDB00EE7A1E /* Pet_AdoptionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14805E9C23799CDB00EE7A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14805E8323799CD900EE7A1E /* Pet Adoption */;
+			targetProxy = 14805E9B23799CDB00EE7A1E /* PBXContainerItemProxy */;
+		};
+		14805EA723799CDB00EE7A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14805E8323799CD900EE7A1E /* Pet Adoption */;
+			targetProxy = 14805EA623799CDB00EE7A1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14805E8D23799CD900EE7A1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14805E8E23799CD900EE7A1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14805E9223799CDB00EE7A1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14805E9323799CDB00EE7A1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14805EAC23799CDB00EE7A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14805EAD23799CDB00EE7A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14805EAF23799CDB00EE7A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet Adoption/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-Adoption";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14805EB023799CDB00EE7A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet Adoption/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-Adoption";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14805EB223799CDB00EE7A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet AdoptionTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-AdoptionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Adoption.app/Pet Adoption";
+			};
+			name = Debug;
+		};
+		14805EB323799CDB00EE7A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet AdoptionTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-AdoptionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet Adoption.app/Pet Adoption";
+			};
+			name = Release;
+		};
+		14805EB523799CDB00EE7A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet AdoptionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-AdoptionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet Adoption";
+			};
+			name = Debug;
+		};
+		14805EB623799CDB00EE7A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
+				INFOPLIST_FILE = "Pet AdoptionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Pet-AdoptionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet Adoption";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14805E7F23799CD900EE7A1E /* Build configuration list for PBXProject "Pet Adoption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14805EAC23799CDB00EE7A1E /* Debug */,
+				14805EAD23799CDB00EE7A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14805EAE23799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet Adoption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14805EAF23799CDB00EE7A1E /* Debug */,
+				14805EB023799CDB00EE7A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14805EB123799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet AdoptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14805EB223799CDB00EE7A1E /* Debug */,
+				14805EB323799CDB00EE7A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14805EB423799CDB00EE7A1E /* Build configuration list for PBXNativeTarget "Pet AdoptionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14805EB523799CDB00EE7A1E /* Debug */,
+				14805EB623799CDB00EE7A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14805E7C23799CD900EE7A1E /* Project object */;
+}
