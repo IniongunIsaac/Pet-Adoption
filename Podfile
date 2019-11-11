@@ -26,5 +26,38 @@ target 'Pet Adoption' do
   target 'Pet AdoptionUITests' do
     # Pods for testing
   end
+  
+  
+  target 'Repository' do
+    use_frameworks!
+
+    # Pods for Repository
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+
+    target 'RepositoryTests' do
+      inherit! :search_paths
+      # Pods for testing
+      pod 'RxBlocking', '~> 5'
+      pod 'RxTest', '~> 5'
+    end
+
+  end
+  
+  target 'Remote API' do
+    use_frameworks!
+
+    # Pods for Repository
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+
+    target 'Remote APITests' do
+      inherit! :search_paths
+      # Pods for testing
+      pod 'RxBlocking', '~> 5'
+      pod 'RxTest', '~> 5'
+    end
+
+  end
 
 end
