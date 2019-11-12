@@ -19,8 +19,8 @@ public struct PetAdoptionRepoImpl: IPetAdoptionRepo {
     
     public let petAdoptionRemote: IPetAdoptionRemote
     
-    public func getPetAdoptionData() throws -> Observable<PetAdoptionResponse> {
-        return try petAdoptionRemote.getPetAdoptionData()
+    public func getPetAdoptionData(jsonFileName: String, jsonFileExtension: String) throws -> Observable<PetAdoptionResponse> {
+        return try petAdoptionRemote.getPetAdoptionData(jsonFileName: jsonFileName, jsonFileExtension: jsonFileExtension)
     }
     
 }

@@ -11,5 +11,5 @@ import RxSwift
 import Entities
 
 public protocol IPetAdoptionRepo {
-    func getPetAdoptionData() throws -> Observable<PetAdoptionResponse>
+    func getPetAdoptionData(jsonFileName: String, jsonFileExtension: String) throws -> Observable<PetAdoptionResponse>
 }

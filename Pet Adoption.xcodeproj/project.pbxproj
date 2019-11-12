@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07570C363AB35E0BA338AD4A /* Pods_Pet_Adoption_Pet_AdoptionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1704CA52F12520A5E41B0310 /* Pods_Pet_Adoption_Pet_AdoptionUITests.framework */; };
+		147CB51A237AC09B005B91D5 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB519237AC09B005B91D5 /* AlertType.swift */; };
+		147CB51C237AD8A2005B91D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB51B237AD8A2005B91D5 /* Extensions.swift */; };
+		147CB51E237ADBC3005B91D5 /* PetPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB51D237ADBC3005B91D5 /* PetPageCollectionViewCell.swift */; };
 		14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8723799CD900EE7A1E /* AppDelegate.swift */; };
 		14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8923799CD900EE7A1E /* SceneDelegate.swift */; };
 		14805E8C23799CD900EE7A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8B23799CD900EE7A1E /* ViewController.swift */; };
@@ -155,6 +158,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		147CB519237AC09B005B91D5 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		147CB51B237AD8A2005B91D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		147CB51D237ADBC3005B91D5 /* PetPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		14805E8423799CD900EE7A1E /* Pet Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14805E8723799CD900EE7A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14805E8923799CD900EE7A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -293,6 +299,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147CB518237AC087005B91D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				147CB519237AC09B005B91D5 /* AlertType.swift */,
+				147CB51B237AD8A2005B91D5 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		14805E7B23799CD900EE7A1E = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +343,7 @@
 		14805E8623799CD900EE7A1E /* Pet Adoption */ = {
 			isa = PBXGroup;
 			children = (
+				14805F37237A050000EE7A1E /* Resources */,
 				14805F2C2379B2B400EE7A1E /* Features */,
 				14805E8723799CD900EE7A1E /* AppDelegate.swift */,
 				14805E8923799CD900EE7A1E /* SceneDelegate.swift */,
@@ -396,7 +412,6 @@
 		14805EEB23799F1100EE7A1E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14805EEC23799F2800EE7A1E /* pet_adoption.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -441,6 +456,7 @@
 		14805F2C2379B2B400EE7A1E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				147CB518237AC087005B91D5 /* Utils */,
 				14805F2D2379B2C700EE7A1E /* Pet Pages */,
 			);
 			path = Features;
@@ -468,8 +484,17 @@
 			isa = PBXGroup;
 			children = (
 				14805F342379BA5F00EE7A1E /* PetPagesViewController.swift */,
+				147CB51D237ADBC3005B91D5 /* PetPageCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		14805F37237A050000EE7A1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14805EEC23799F2800EE7A1E /* pet_adoption.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1E0BD379729E6896C9A1CCA4 /* Frameworks */ = {
@@ -1062,9 +1087,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14805E8C23799CD900EE7A1E /* ViewController.swift in Sources */,
+				147CB51A237AC09B005B91D5 /* AlertType.swift in Sources */,
 				14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */,
+				147CB51C237AD8A2005B91D5 /* Extensions.swift in Sources */,
 				14805F332379B39C00EE7A1E /* PetPagesViewModel.swift in Sources */,
 				14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */,
+				147CB51E237ADBC3005B91D5 /* PetPageCollectionViewCell.swift in Sources */,
 				14805F312379B35700EE7A1E /* IPetPagesViewModel.swift in Sources */,
 				14805F352379BA5F00EE7A1E /* PetPagesViewController.swift in Sources */,
 			);
@@ -1341,6 +1369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4J3Q4SCD8;
 				INFOPLIST_FILE = "Pet Adoption/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1361,6 +1390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4J3Q4SCD8;
 				INFOPLIST_FILE = "Pet Adoption/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

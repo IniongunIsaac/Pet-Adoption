@@ -12,9 +12,13 @@ import Entities
 import RxSwift
 import RxCocoa
 
-struct PetPagesViewModel: IPetPagesViewModel {
+class PetPagesViewModel: IPetPagesViewModel {
     
     let petAdoptionRepo: IPetAdoptionRepo
+    
+    init(petAdoptionRepo: IPetAdoptionRepo) {
+        self.petAdoptionRepo = petAdoptionRepo
+    }
     
     var petAdoptionResponse: PublishSubject<PetAdoptionResponse> = PublishSubject()
     var throwableError: PublishSubject<Error> = PublishSubject()
@@ -23,13 +27,13 @@ struct PetPagesViewModel: IPetPagesViewModel {
     func getPetAdoptionData() {
         
         do {
-            try petAdoptionRepo.getPetAdoptionData().subscribe(onNext: { ptAdptnRes in
+            try petAdoptionRepo.getPetAdoptionData(jsonFileName: "pet_adoption", jsonFileExtension: "json").subscribe(onNext: { [weak self] ptAdptnRes in
                 
-                self.petAdoptionResponse.onNext(ptAdptnRes)
+                self?.petAdoptionResponse.onNext(ptAdptnRes)
                 
-            }, onError: { error in
+            }, onError: { [weak self] error in
                 
-                self.throwableError.onNext(error)
+                self?.throwableError.onNext(error)
                 
             }).disposed(by: disposeBag)
             

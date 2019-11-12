@@ -14,20 +14,23 @@ public class PetAdoptionRemoteImpl: IPetAdoptionRemote {
     
     public init() {}
     
-    public func getPetAdoptionData() throws -> Observable<PetAdoptionResponse> {
-        
+    public func getPetAdoptionData(jsonFileName: String, jsonFileExtension: String) throws -> Observable<PetAdoptionResponse> {
         do {
-            return try Observable.just(PetAdoptionResponse.mapTo(jsonString: readJsonDataFile())!)
+            let url = Bundle.main.url(forResource: jsonFileName, withExtension: jsonFileExtension)!
+            let data = try Data(contentsOf: url, options: .mappedIfSafe)
+            return try Observable.just(JSONDecoder().decode(PetAdoptionResponse.self, from: data))
         } catch let error {
             throw error
         }
     }
     
     fileprivate func readJsonDataFile() throws -> String {
-        let url = Bundle.init(for: PetAdoptionRemoteImpl.self).url(forResource: "pet_adoption", withExtension: "json")!
+        let url = Bundle.main.url(forResource: "pet_adoption", withExtension: "json")!
         do {
             let jsonData = try Data(contentsOf: url)
-            return try JSONSerialization.jsonObject(with: jsonData) as! String
+            let response = try JSONSerialization.jsonObject(with: jsonData) as! [String : Any]
+            print(response)
+            return "\(response)"
         }
         catch let error {
             throw error
