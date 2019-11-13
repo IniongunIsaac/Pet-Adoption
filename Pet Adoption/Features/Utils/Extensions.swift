@@ -11,6 +11,7 @@ import UIKit
 
 extension UIColor {
     static var mainColor = UIColor(red: 0/255, green: 151/255, blue: 205/255, alpha: 1)
+    static var milkColor = UIColor(red: 255/255, green: 224/255, blue: 224/255, alpha: 1)
 }
 
 

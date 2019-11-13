@@ -68,12 +68,45 @@ class PetPagesViewController: UICollectionViewController, UICollectionViewDelega
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         
-        let attributedText = NSMutableAttributedString(string: petAdoptionResponse!.name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        let attributedText = NSMutableAttributedString(string: petAdoptionResponse!.name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor.black])
         
         label.attributedText = attributedText
         
         return label
     }()
+    
+    private let submitButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Submit", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .mainColor
+        button.alpha = 0
+        button.addTarget(self, action: #selector(handleSubmitButton), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc fileprivate func handleSubmitButton() {
+        
+        for cell in collectionView.visibleCells as! [PetPageCollectionViewCell] {
+            //cell.subviews
+            //validate input
+        }
+        showAlert(message: "Handle input validation!", alertType: .success)
+    }
+    
+    fileprivate func setupSubmitButton() {
+        
+        view.addSubview(submitButton)
+        
+        NSLayoutConstraint.activate([
+            submitButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60),
+            submitButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            submitButton.heightAnchor.constraint(equalToConstant: 40),
+            submitButton.widthAnchor.constraint(equalToConstant: 100)
+        ])
+    }
     
     fileprivate func setupPageTitle() {
         
@@ -106,6 +139,12 @@ class PetPagesViewController: UICollectionViewController, UICollectionViewDelega
         
         pageControl.currentPage = Int(x / view.frame.width)
         
+        if (petAdoptionResponse!.pages.count - 1) == Int(x / view.frame.width) {
+            submitButton.alpha = 1
+        } else {
+            submitButton.alpha = 0
+        }
+        
     }
 
     override func viewDidLoad() {
@@ -131,6 +170,7 @@ class PetPagesViewController: UICollectionViewController, UICollectionViewDelega
             self?.petAdoptionResponse = petAdoptionData
             self?.setupPageTitle()
             self?.setupBottomControls()
+            self?.setupSubmitButton()
         }.disposed(by: disposeBag)
     }
     
@@ -167,7 +207,9 @@ extension PetPagesViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PetPageCollectionViewCell
         
-        cell.page = petAdoptionResponse!.pages[indexPath.item]
+        if cell.page == nil {
+            cell.page = petAdoptionResponse!.pages[indexPath.item]
+        }
         
         return cell
     }
