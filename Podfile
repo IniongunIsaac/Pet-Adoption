@@ -17,6 +17,7 @@ target 'Pet Adoption' do
   
   pod 'Alertift', '~> 4.1'
   pod 'DatePicker'
+  pod 'MBCheckboxButton'
 
   target 'Pet AdoptionTests' do
     inherit! :search_paths

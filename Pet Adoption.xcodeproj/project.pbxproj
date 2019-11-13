@@ -11,6 +11,7 @@
 		147CB51A237AC09B005B91D5 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB519237AC09B005B91D5 /* AlertType.swift */; };
 		147CB51C237AD8A2005B91D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB51B237AD8A2005B91D5 /* Extensions.swift */; };
 		147CB51E237ADBC3005B91D5 /* PetPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB51D237ADBC3005B91D5 /* PetPageCollectionViewCell.swift */; };
+		147CB524237B356B005B91D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CB523237B356B005B91D5 /* Constants.swift */; };
 		14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8723799CD900EE7A1E /* AppDelegate.swift */; };
 		14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8923799CD900EE7A1E /* SceneDelegate.swift */; };
 		14805E8C23799CD900EE7A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14805E8B23799CD900EE7A1E /* ViewController.swift */; };
@@ -161,6 +162,7 @@
 		147CB519237AC09B005B91D5 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		147CB51B237AD8A2005B91D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		147CB51D237ADBC3005B91D5 /* PetPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		147CB523237B356B005B91D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14805E8423799CD900EE7A1E /* Pet Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14805E8723799CD900EE7A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14805E8923799CD900EE7A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			children = (
 				147CB519237AC09B005B91D5 /* AlertType.swift */,
 				147CB51B237AD8A2005B91D5 /* Extensions.swift */,
+				147CB523237B356B005B91D5 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1091,6 +1094,7 @@
 				14805E8823799CD900EE7A1E /* AppDelegate.swift in Sources */,
 				147CB51C237AD8A2005B91D5 /* Extensions.swift in Sources */,
 				14805F332379B39C00EE7A1E /* PetPagesViewModel.swift in Sources */,
+				147CB524237B356B005B91D5 /* Constants.swift in Sources */,
 				14805E8A23799CD900EE7A1E /* SceneDelegate.swift in Sources */,
 				147CB51E237ADBC3005B91D5 /* PetPageCollectionViewCell.swift in Sources */,
 				14805F312379B35700EE7A1E /* IPetPagesViewModel.swift in Sources */,

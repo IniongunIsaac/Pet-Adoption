@@ -173,7 +173,8 @@ extension PetPagesViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height)
+        
+        return CGSize(width: collectionView.safeAreaLayoutGuide.layoutFrame.width, height: collectionView.safeAreaLayoutGuide.layoutFrame.height - 60)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
